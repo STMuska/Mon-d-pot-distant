@@ -1,0 +1,64 @@
+@media screen and (max-width: 768px ){  
+    #navigation{
+        background-color: black;
+        margin-bottom: 10px;
+        padding: 2px 20px;
+        
+    }
+    #MenuHead{
+        width: 70px;
+        flex-direction: column; 
+    }
+    a{
+        color: rgb(255, 255, 255);
+    }
+    .jardin{
+       text-align: center;
+       margin-top: -30px;
+       font-size: x-large;
+    }
+    #mentionlegales{
+        background-color: black;
+        padding: 30px 20px;
+    }
+    #block{
+        margin-left: 1500px;
+        width: 400px;
+        background-color: rgb(175, 172, 172);
+        height: 425px;
+        position: absolute;
+        display: none;
+    }
+ }
+    img{
+        max-width: 100%;
+        height: auto;
+    } 
+    #block{
+        margin-left: 1115px;
+        width: 300px;
+        background-color: rgb(175, 172, 172);
+        height: 600px;
+        position: absolute;
+    }
+    #navigation{
+        background-color: black;
+        margin-bottom: 10px;
+        padding: 2px 20px;    
+    }
+    a{
+        color: rgb(255, 255, 255);
+    }
+    .jardin{
+        text-align: center;
+        margin-top: -30px;
+        font-size: x-large;
+    }
+    #mentionlegales{
+        background-color: black;
+        padding: 30px 20px;
+    }
+    #logo{
+        width: 380px;
+    }
+    
