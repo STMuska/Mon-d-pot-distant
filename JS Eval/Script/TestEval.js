@@ -129,33 +129,33 @@ function Form(e){
     var mail = new RegExp("^[a-zA-Z_0-9]+@[a-z]+[.]?[a-z]{2,4}$");
 
     if(NOM == ""){
-        var e1 = document.getElementById("E1");
+        var e1 = document.getElementById("Q1");
         e.preventDefault();
         e1.textContent = "Veuillez renseigner votre nom *"
     }
     else if(!n.test(NOM)){
-        var e1 = document.getElementById("E1");
+        var e1 = document.getElementById("Q1");
          e1.textContent =" Veuillez renseigner correctement votre nom *"
         e.preventDefault();
     }
     else{
-        var e1 = document.getElementById("E1");
+        var e1 = document.getElementById("Q1");
         
         e1.textContent = ""
     }
 
     if(PRENOM == ""){
-        var e2 = document.getElementById("E2");
+        var e2 = document.getElementById("Q2");
         e.preventDefault();
         e2.textContent ="Veuillez renseigner votre prénom *"
     }
     else if(!p.test(PRENOM)){
-        var e2 = document.getElementById("E2");
+        var e2 = document.getElementById("Q2");
         e2.textContent = "Veuillez renseigner correctement votre prénom *"
         e.preventDefault();
     }
     else{
-        var e2 = document.getElementById("E2");
+        var e2 = document.getElementById("Q2");
         
         e2.textContent = ""
     }
@@ -167,86 +167,86 @@ function Form(e){
         }
     }
     if(culcul != 1){
-        var e2_5 = document.getElementById("sexe1");
+        var e2_5 = document.getElementById("Q3");
         e.preventDefault();
         e2_5.textContent = "Veuillez séléctionner votre sexe *"
     }
     else{
-        var e2_5 = document.getElementById("sexe1");
+        var e2_5 = document.getElementById("Q3");
         console.log("culcul")
         e2_5.textContent = "";
     }
     
     if(DATE == ""){
-        var e3 = document.getElementById("E3");
+        var e3 = document.getElementById("Q4");
         e.preventDefault();
         e3.textContent = "Veuillez renseigner votre date de naissance *"
     }
     else{
-        var e3 = document.getElementById("E3");
+        var e3 = document.getElementById("Q4");
         
         e3.textContent = ""
     }
 
     if(CODE == ""){
-        var e4 = document.getElementById("E4");
+        var e4 = document.getElementById("Q5");
         e.preventDefault();
         e4.textContent = "Veuillez renseigner votre code postal *"
     }
     else if(!c.test(CODE)){
-        var e4 = document.getElementById("E4");
+        var e4 = document.getElementById("Q5");
         e.preventDefault();
         e4.textContent ="Veuillez renseigner correctement votre code postal *"
     }  
     else{
-        var e4 = document.getElementById("E4");
+        var e4 = document.getElementById("Q5");
         
         e4.textContent = ""
     }
 
     if(EMAIL == ""){
-        var e7 = document.getElementById("E7");
+        var e7 = document.getElementById("Q8");
         e.preventDefault();
         e7.textContent = "Veuillez renseigner votre E-mail *"
     }
     else if(!mail.test(EMAIL)){
-        var e7 = document.getElementById("E7");
+        var e7 = document.getElementById("Q8");
         e.preventDefault();
         e7.textContent = "Veuillez renseigner correctement votre E-mail *"
     }
     else{
-        var e7 = document.getElementById("E7");
+        var e7 = document.getElementById("Q8");
         
         e7.textContent = ""
     }
 
     if(SUJET == ""){
-        var e8 = document.getElementById("E8");
+        var e8 = document.getElementById("Q9");
         e.preventDefault();
         e8.textContent ="Veuillez séléctionner un sujet *"
 }
 else{
-    var e8 = document.getElementById("E8");
+    var e8 = document.getElementById("Q9");
     e8.textContent = ""
 }
     if(QUESTION == ""){
-        var e9 = document.getElementById("E9");
+        var e9 = document.getElementById("Q10");
         e.preventDefault();
         e9.textContent = "Veuillez indiquer votre question *"
     }
     else{
-        var e9 = document.getElementById("E9")
+        var e9 = document.getElementById("Q10")
         
         e9.textContent = ""
     }
     if(ACCEPT == ""){
-        console.log("culcul")
-        var e10 = document.getElementById("E10");
+        console.log("clcl")
+        var e10 = document.getElementById("Q11");
         e.preventDefault();
         e10.textContent = "Veuillez cocher la case pour accepter le traitement informatique du formulaire *"
     }
     else{
-        var e10 = document.getElementById("E10");
+        var e10 = document.getElementById("Q11");
         e10.textContent = ""
     }
 
