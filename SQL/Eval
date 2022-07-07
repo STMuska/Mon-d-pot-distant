@@ -3455,14 +3455,6 @@ FROM orders JOIN customers ON orders.CustomerID = customers.CustomerID
 WHERE ShipCountry = "France"
 GROUP BY Shipname;
 
-<!--5-->
-
-SELECT CompanyName AS "Client", SUM(UnitPrice * Quantity) AS "CA", Country AS "Pays" 
-FROM customers 
-JOIN orders on orders.CustomerID = customers.CustomerID 
-JOIN order_details on order_details.OrderID = orders.OrderID 
-GROUP BY CompanyName, Country HAVING SUM(UnitPrice * Quantity) > 30000 ORDER BY CA DESC;
-
 <!--6-->
 
 SELECT DISTINCT customers.Country AS "Pays"
@@ -3472,13 +3464,6 @@ JOIN orders ON order_details.OrderID = orders.OrderID
 JOIN customers ON orders.CustomerID = customers.CustomerID
 WHERE suppliers.CompanyName = "Exotic Liquids"
 ORDER BY customers.Country asc;
-
-<!--7-->
-
-SELECT SUM(UnitPrice*Quantity) as 'Montant Ventes 97' 
-FROM order_details 
-JOIN orders on orders.orderID = order_details.orderID 
-WHERE YEAR(orderdate) = 1997;
 
 <!--8-->
 
@@ -3494,8 +3479,3 @@ FROM orders JOIN customers ON orders.CustomerID = customers.CustomerID
 WHERE customers.CompanyName = "Du monde entier"
 ORDER BY orders.OrderDate DESC
 LIMIT 1;
-
-<!--10-->
-
-SELECT CONVERT(AVG(DATEDIFF(orders.ShippedDate,orders.OrderDate)),INT) AS "Délai moyen de livraison en jours" 
-FROM orders;

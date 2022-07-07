@@ -48,7 +48,7 @@
 // }
 // else{
 //     alert("erreur")
-//}
+// }
 // fin exo 3
 
 
@@ -107,7 +107,7 @@
 //         }
 // }
 
-// // fin exo 4
+// fin exo 4
 
 document.getElementById("formulaire").addEventListener("submit", Form);
 
